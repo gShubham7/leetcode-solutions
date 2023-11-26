@@ -22,15 +22,13 @@ var romanToInt = function (s) {
 
   let res = 0;
 
-  for (let i = 0; i < s.length; i++) {
-    const cur = hash[s[i]];
-    const next = hash[s[i + 1]];
+  for (let i = s.length - 1; i >= 0; i--) {
+    const curr = hash[s[i]];
 
-    if (cur < next) {
-      res += next - cur;
-      i++;
+    if (i < s.length - 1 && curr < hash[s[i + 1]]) {
+      res -= curr;
     } else {
-      res += cur;
+      res += curr;
     }
   }
 
