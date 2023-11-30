@@ -23,6 +23,6 @@ var reverseString = function (str) {
   return str;
 
   // Time Complexity    -----> O(n)
-  // Space Complexity    -----> O(1)
+  // Space Complexity   -----> O(1)
 };
 // @lc code=end
