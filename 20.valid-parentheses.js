@@ -29,6 +29,6 @@ var isValid = function (s) {
   return !stack.length;
 
   // Time Complexity    -----> O(n)
-  // Space Complexity    -----> O(n)
+  // Space Complexity   -----> O(n)
 };
 // @lc code=end
