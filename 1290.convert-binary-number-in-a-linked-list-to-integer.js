@@ -17,6 +17,7 @@
  * @return {number}
  */
 var getDecimalValue = function (head) {
+  /*
   let curr = head;
   let len = 0;
   let sum = 0;
@@ -34,7 +35,15 @@ var getDecimalValue = function (head) {
   }
   return sum;
 
-  // Time Complexity    -----> O(n)
-  // Space Complexity   -----> O(1)
+Time Complexity    -----> O(n)
+Space Complexity   -----> O(1)
+*/
+  let curr = head;
+  let sum = 0;
+  while (curr != null) {
+    sum = sum * 2 + curr.val;
+    curr = curr.next;
+  }
+  return sum;
 };
 // @lc code=end
