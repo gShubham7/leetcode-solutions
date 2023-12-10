@@ -37,11 +37,22 @@ var getDecimalValue = function (head) {
 
 Time Complexity    -----> O(n)
 Space Complexity   -----> O(1)
+-----------------------------------------
+let curr = head;
+let sum = 0;
+while (curr != null) {
+    sum = sum * 2 + curr.val;
+    curr = curr.next;
+}
+return sum;
 */
+
+  // Bit Manipulation
+
   let curr = head;
   let sum = 0;
   while (curr != null) {
-    sum = sum * 2 + curr.val;
+    sum = (sum << 1) | curr.val;
     curr = curr.next;
   }
   return sum;
