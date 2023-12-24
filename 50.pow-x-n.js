@@ -28,5 +28,8 @@ var myPow = function (x, n) {
   }
 
   return result;
+
+  // Time Complexity    -----> O(log n)
+  // Space Complexity   -----> O(1)
 };
 // @lc code=end
