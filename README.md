@@ -1,0 +1,7 @@
+## Leetcode Solutions
+1. Two Sum
+2. Add Two Numbers
+3. Longest Substring Without Repeating Characters
+5. Longest Palindromic Substring
+9. Palindrome Number
+11. Container With Most Water
