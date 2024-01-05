@@ -1,0 +1,22 @@
+/*
+ * @lc app=leetcode id=119 lang=javascript
+ *
+ * [119] Pascal's Triangle II
+ */
+
+// @lc code=start
+/**
+ * @param {number} rowIndex
+ * @return {number[]}
+ */
+var getRow = function (rowIndex) {
+  let res = [1];
+  let prev = 1;
+  for (let k = 1; k <= rowIndex; k++) {
+    let next_val = (prev * (rowIndex - k + 1)) / k;
+    res.push(next_val);
+    prev = next_val;
+  }
+  return res;
+};
+// @lc code=end
