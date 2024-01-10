@@ -29,6 +29,7 @@
 59. Spiral Matrix II
 66. Plus One
 69. Sqrt(x)
+71. Simplify Path
 75. Sort Colors
 83. Remove Duplicates from Sorted List
 88. Merge Sorted Array
